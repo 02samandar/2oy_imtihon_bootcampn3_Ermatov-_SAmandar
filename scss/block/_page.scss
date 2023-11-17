@@ -1,0 +1,209 @@
+.page__block {
+  display: flex;
+  max-width: 1300px;
+  padding: 32px 120px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: $white;
+}
+
+.page__title {
+  color: $black;
+  font-family: $font2;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.page__text {
+  color: $dimNavy;
+  font-family: $font2;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 22px;
+}
+
+@media screen and (max-width: 990px) {
+  .page__block {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .page__title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .page__text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .page__block {
+    padding: 0;
+  }
+}
+
+// apple
+
+.apple {
+  padding-top: 84px;
+  background-color: $blackSpace;
+}
+
+.apple__block {
+  display: flex;
+  align-items: center;
+  gap: 88px;
+  margin-left: 90px;
+}
+
+.apple__title {
+  color: $white;
+  font-family: $font2;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.apple__text {
+  // margin-top: 16px;
+  color: $white;
+  font-family: $font2;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.apple_link {
+  // margin-top: 24px;
+  color: $white;
+  font-family: $font2;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px 40px 19px 39px;
+  background-color: $prime;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 970px) {
+
+  .apple__block {
+    max-width: 768px;
+    display: flex;
+    gap: 72px;
+    margin-left: -10px;
+  }
+
+  .apple {
+    padding-top: 40px;
+  }
+
+  .apple_img {
+    max-width: 110px;
+    background-size: cover;
+    margin-top: 7px;
+  }
+
+  .apple__title {
+    color: $white;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .apple__text{
+    color: $white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -20px;
+  }
+
+  .apple_link {
+    padding: 16px 30px 15px 29px;
+    margin-top: -10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .apple_img{
+    max-width: 85px;
+    margin-left: 15px;
+  }
+  .apple{
+    padding: 0;
+  }
+  .apple__block {
+    max-width: 360px;
+    display: flex;
+    gap: 24px;
+  }
+
+
+  .apple__title {
+    color: $white;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+
+
+
+  .apple_link {
+    padding: 13px 39px 12px 39px;
+    margin-bottom: 24px;
+  }
+}
+
+
+
+// webpage
+
+.webpage__block {
+  display: flex;
+  max-width: 1300px;
+  padding: 32px 120px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: $white;
+}
+
+.webpage_title {
+  color: $black;
+  font-family: $font2;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.webpage__text {
+  color: $dimNavy;
+  font-family: $font2;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 22px;
+}
+
+@media screen and (max-width: 990px) {
+  .webpage__block {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .webpage_title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .webpage__text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .webpage__block {
+    padding: 0;
+  }
+}
+

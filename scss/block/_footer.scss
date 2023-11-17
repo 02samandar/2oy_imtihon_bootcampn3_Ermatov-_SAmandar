@@ -1,0 +1,142 @@
+.media{
+  padding: 40px 0;
+}
+
+.media__block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.media_list{
+  margin-left: -40px;
+}
+
+.media_text{
+  color: $light;
+  font-family: $font2;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.media_main_text{
+  max-width: 273px;
+  color: $light;
+  font-family: $font2;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.media_main_list{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.media_main_link{
+  color: $black;
+  font-family: $font2;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.media_block_list{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.media_block_link{
+  color: $black;
+  font-family: $font2;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.media_subs_text{
+  color: $black;
+  font-family: $font2;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.media_main_text{
+  // max-width: 381px;
+  color: $dimGrey;
+  font-family: $font2;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+
+.media_info_block{
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  margin-bottom: 40px;
+}
+
+.media_block_main_head_link{
+  color: $prime;
+  font-family: $font2;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.media_link_block{
+  display: flex;
+  gap: 8px;
+}
+
+.media_block_header_info{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.media_subs_block_link{
+  color: $black;
+  font-family: $font2;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1060px) {
+  .media__block{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .media_main_block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 15px;
+  }
+
+
+  .media_main_list{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    margin-bottom: 15px;
+  }
+
+  .media_block_list{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 16px;
+  }
+
+  .media_main_list{
+    display: flex;
+  }
+
+  .media_block_list{
+    display: flex;
+    flex-direction: column;
+    margin-left: -50px;
+  }
+}
+
+

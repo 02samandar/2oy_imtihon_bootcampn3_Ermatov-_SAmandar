@@ -1,0 +1,321 @@
+.website{
+  padding: 32px 0 40px 0;
+}
+.website__block{
+  max-width: 1300px;
+}
+
+.website__link{
+  color: $prime;
+  font-family: $font2;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  margin-left: 40px;
+}
+
+.website_card{
+  max-width: 282px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background-color: $white;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+
+.website_img_block{
+  display: flex;
+  justify-content: space-between;
+  gap: 74px;
+  padding: 16px 16px 0 16px;
+}
+
+.website_list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
+.website_main_title{
+  max-width: 255px;
+  color: $black;
+  text-align: center;
+  font-family: $font2;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.website_main_subs_header_subscribe_link{
+  max-width: 266px;
+  flex-shrink: 0;
+  margin-top: -9px;
+}
+
+.website_header_info{
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.website_main_text{
+  color: $light;
+  font-family: $font2;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.website_subscribe_block{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.website_subs_main_text{
+  color: $light;
+  font-family: $font2;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration-line: strikethrough;
+}
+
+.website_subs_head_main_text{
+  color: $black;
+  font-family: $font2;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.website_main_subs_link{
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  font-family: $font2;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: $greenNew;
+  border-radius: 8px;
+  gap: 8px;
+  padding: 20px 80px 18px 90px;
+  flex-shrink: 0;
+  margin: 0 8px 8px 8px;
+  position: relative;
+  margin-top: -14px;
+
+  &::before{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url(../_img/layout-shopping.svg);
+    position: absolute;
+    left: 22%;
+    top: 30%;
+  }
+}
+
+.website_main_header_subs_block{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: -15px;
+}
+
+.website_main_subsribe_subs_header_text{
+  color: $prime;
+  font-family: $font2;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.website_main_subsribe_header_text{
+  color: $dimGrey;
+  font-family: $font2;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.website_main_subs_head_link{
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  font-family: $font2;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: $prime;
+  border-radius: 8px;
+  gap: 8px;
+  padding: 20px 80px 18px 90px;
+  flex-shrink: 0;
+  margin: 0 8px 8px 8px;
+  position: relative;
+  margin-top: -14px;
+
+  &::before{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url(../_img/layout-shopping.svg);
+    position: absolute;
+    left: 22%;
+    top: 30%;
+  }
+
+}
+
+.website_main_header_link{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: $prime;
+  font-family: $font2;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid $prime;
+  border-radius: 8px;                            
+  padding: 16px 20px 15px 24px;
+  flex-shrink: 0;
+  margin-top: -10px;
+  margin-bottom: 8px;
+}
+
+.website_main_subs_head_link{
+  margin-bottom: 4px;
+}
+
+@media screen and (max-width: 1200px) {
+  .website__block{
+    max-width: 768px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .website_list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .website__link{
+    color: $prime;
+    font-family: $font2;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    margin-left: -15px;
+  }
+
+  .website_item{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .website_main_subs_header_subscribe_link{
+      max-width: 140px;
+    }
+
+    .website_main_title{
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .website_main_subs_link{
+      display: flex;
+      flex-direction: column;
+      color: $white;
+      font-family: $font2;
+      font-size: 18px;
+      font-weight: 500;
+      background-color: $greenNew;
+      border-radius: 8px;
+      gap: 8px;
+      padding: 20px 80px 18px 20px;
+      flex-shrink: 0;
+      margin: 0 8px 8px 8px;
+      position: relative;
+      margin-top: -14px;
+    
+      &::before{
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        display: inline-block;
+        content: "";
+        background-repeat: no-repeat;
+        background-image: url(../_img/layout-shopping.svg);
+        position: absolute;
+        left: 60%;
+        top: 30%;
+      }
+    }
+
+    .website_main_subs_head_link{
+      display: flex;
+      flex-direction: column;
+      color: $white;
+      font-family: $font2;
+      font-size: 18px;
+      font-weight: 500;
+      background-color: $prime;
+      border-radius: 8px;
+      gap: 8px;
+      padding: 20px 80px 18px 40px;
+      flex-shrink: 0;
+      margin: 0 8px 8px 8px;
+      position: relative;
+      margin-top: -14px;
+    
+      &::before{
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        display: inline-block;
+        content: "";
+        background-repeat: no-repeat;
+        background-image: url(../_img/layout-shopping.svg);
+        position: absolute;
+        left: 65%;
+        top: 30%;
+      }
+    
+    }
+
+    .website_main_header_link{
+      border: none;
+    }
+}
+
+
+@media screen and (max-width: 675px) {
+  .website_list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 30px;
+    row-gap: 8px;
+    padding: 0;
+  }
+
+  .website_item{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

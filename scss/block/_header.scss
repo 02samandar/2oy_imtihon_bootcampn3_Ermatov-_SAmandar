@@ -1,0 +1,440 @@
+.header{
+  padding: 10px 0 9px 0;
+  background-color: $lightGrey;
+
+}
+
+
+.header__block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__content{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header_list{
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.header_select{
+  border: none;
+}
+
+.header__title{
+  color: $black;
+  font-family: $font2;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header_select{
+  color: $prime;
+  font-family: $font2;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1000px) {
+  .header__block{
+    max-width: 768px;
+  }
+
+  .header{
+    display: none;
+  }
+  
+}
+
+
+
+
+
+
+
+// login
+
+.login{
+  padding: 31px 0 16px 0;
+}
+
+.login__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login_main_img{
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.login_list{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.login_main_link{
+  color: $black;
+  font-family: $font2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.login_main_sub_link{
+  color: $black;
+  font-family: $font2;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: $yellow;
+  border-radius: 8px;
+  padding: 2px 8px 2px 0;
+
+  &::before{
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-image: url(../img/sticker.svg);
+    vertical-align: middle;
+    padding: 4px 3px 4px 0;
+  } 
+}
+
+.login_sub_btn{
+  color: $prime;
+  font-family: $font2;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+
+  &::before{
+    width: 81px;
+    height: 2px;
+    flex-shrink: 0;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/line.svg);
+    position: absolute;
+    top: 110%;
+    left: -8%;
+  }
+}
+.login_sub_link{
+  color: $black;
+  font-family: $font2;
+  font-size: 20px;
+  font-weight: 400;
+
+  &::before{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-image: url(../img/phone.svg);
+    vertical-align: middle;
+  }
+}
+
+.login_sub_head_link{
+  color: $prime;
+  font-family: $font2;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 4px;
+  margin-left: 52px;
+}
+
+.login_input{
+  max-width: 299px;
+  max-width: 100%;
+  color: $light;
+  font-family: $font2;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: $white;
+  border-radius: 8px;
+  border: 1px solid $light;
+  padding: 16px 100px 16px 40px;
+}
+
+.login_main_header_btn_block{
+  position: relative;
+
+  &::before{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-image: url(../img/search-new.svg);
+    position: absolute;
+    top: 30%;
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .login_main_header_btn_block{
+    display: none;
+   }
+}
+
+@media screen and (max-width: 990px) {
+  .login_main_header_btn_block{
+    display: inline-block;
+   }
+
+   .login_form{
+    border: none;
+    outline: none;
+   }
+}
+
+
+@media screen and (max-width: 1220px) {
+  .login_list{
+    display: none;
+  }
+
+  .login_sub_head_link{
+    display: none;
+  }
+
+  .login_header_btn{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-image: url(../img/menu.svg);
+    vertical-align: middle;
+    margin-left: 40px;
+    background-color: $white;
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .login_main_header_btn_block{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .login_sub_link{
+    display: none;
+  }
+
+  .login_sub_link{
+    display: none;
+  }
+
+  .login_header_btn{
+    position: relative;
+
+    &::before{
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      display: inline-block;
+      content: "";
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+      background-image: url(../img/phone.svg);
+      position: absolute;
+      top: -5%;
+      left: -300%;
+    }
+  }
+
+  .login_header_btn{
+    &::after{
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      display: inline-block;
+      content: "";
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url(../img/search.svg);
+      position: absolute;
+      left: -590%;
+      top: 5%;
+    }
+  }
+}
+
+// site
+
+.site{
+  padding: 22px 0;
+}
+
+
+.site__block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site_link{
+  display: flex;
+  color: $white;
+  font-family: $font2;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: $prime;
+  border-radius: 16px;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+
+  &::before{
+    width: 32px;
+    height: 32px; 
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-image: url(/img/layout.svg);
+  }
+}
+
+.site_form{
+  position: relative;
+  &::before{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-image: url(../img/search-new.svg);
+    position: absolute;
+    top: 28%;
+    left: 1%;
+  }
+}
+
+.site_input{
+  display: flex;
+  color: $light;
+  font-family: $font2;
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 594px;
+  padding: 16px 299px 16px 35px;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+  background-color: $white;
+  border-radius: 8px;
+  border: 1px solid $light;
+  outline-color: $dimGrey;
+}
+
+
+
+.site_main_link:nth-child(1){
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-image: url(../img/sticker-icon.svg);
+}
+
+.site_btn_block{
+  display: flex;
+  gap: 24px;
+}
+
+.site_main_link:nth-child(2){
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-image: url(../img/olimp.svg);
+}
+
+.site_sub_link{
+  display: flex;
+  color: $white;
+  font-family: $font2;
+  font-size: 20px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  background-color: $green;
+  border-radius: 16px;
+  padding: 16px 42px;
+  gap: 4px;
+  flex-shrink: 0;
+  position: relative;
+
+  &::before{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url(../img/shopping.svg);
+    position: absolute;
+    left: 5.5%;
+    top: 33%;
+  }
+}
+
+.site_header_btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: $white;
+  font-family: $font2;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 4px 12px;
+  background-color: $greenSpace;
+  border-radius: 32px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+@media screen and (max-width: 1170px) {
+  .site{
+    display: none;
+  }
+}
+
